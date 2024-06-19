@@ -58,7 +58,7 @@ a {
 }
 
 .topbar-nav h3 {
-    background-color: red;
+    background-color: #B12024;
     padding: 28px;
     margin: 0;
 }
@@ -81,13 +81,27 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: relative;
+    padding: 20px 50px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
 }
 
-#logo a {
-    color: white;
-    font-size: 30px;
-    font-weight: 900;
+#logo img {
+width: 10%;
 
+}
+#logo  h1{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+span{
+    font-weight: 200;
 }
 
 .nav-links {
