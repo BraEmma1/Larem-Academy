@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 
     <link rel="stylesheet" href="./styles.css" />
     <title>Larem Academy</title>
@@ -46,8 +46,8 @@
 
                 <nav class="nav-items">
                     <div id="logo">
-                        <img src="./images/larem academy logo icon.png" alt="">
-                        <img src="./images/larem Academy mobile.png" alt="">
+                        <img src="./images/larem academy logo icon.png" alt="" id="desktop-logo">
+                        <img src="./images/larem Academy mobile.png" alt="" id="mobile-logo">
                         <h1>LAREM <span>ACADEMY</span></h1>
                     </div>
                     <div class="nav-links" id="navLinks">
@@ -62,13 +62,19 @@
                     </div>
                     <div class="icons">
                         <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
-                        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-                            <i class="fa fa-bars"></i>
+                        <a href="javascript:void(0);" class="icon"   id="menuIcon" onclick="toggleNav()">
+                            <i class="fa fa-bars" id="hamburgerIcon" id="menuIcon"></i>
                         </a>
+                        <i class="fa-solid fa-xmark" id="closeIcon" onclick="toggleNav()"></i>
                     </div>
                 </nav>
 
 
+               <div class="hero-text">
+                <h2>Welcome to</h2>
+                <h1>Larem  <span>Academy</span></h1>
+                <a href=""><h3>Take Tour</h3></a>
+               </div>
             </section>
 
 

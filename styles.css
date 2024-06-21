@@ -81,26 +81,34 @@ nav {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 150px;
 }
-#logo{
+
+#logo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     cursor: pointer;
 }
 
-#logo img {
-width: 10%;
+#desktop-logo {
+    width: 10%;
 
 }
-#logo  h1{
+
+#logo h1 {
     color: white;
     font-size: 22px;
     font-weight: 600;
+    margin: 0;
 
 }
-span{
+
+#mobile-logo {
+    display: none;
+}
+
+span {
     font-weight: 200;
 }
 
@@ -146,24 +154,86 @@ span{
     display: none;
     color: white;
     font-size: 24px;
-    
+
 }
+
 .icons {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
+/* End of Nav Styling */
+
+/* hero text Styling */
+.hero-text{
+    display: flex;
+    flex-direction: column;
+   padding-left: 170px;
+}
+
+.hero-text h2{
+    color: white;
+    font-size: 30px;
+    font-family: "playfair display";
+}
+
+.hero-text h1{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media query:When the screen is less than 600 pixels wide, hide all links */
 @media screen and (max-width: 768px) {
-   #top-bar{
-    display: none;
-   }
-  .nav-items{
-    padding: 0 25px;
-    background-color: #1EB2A6;
-  }
-   
+    #top-bar {
+        display: none;
+    }
+
+    .nav-items {
+        padding: 0 25px;
+        background-color: #1EB2A6;
+    }
+    #logo{
+        gap: 5px;
+    }
+
+    #mobile-logo {
+        display: inline;
+        padding: 15px 0;
+        width: 20%;
+        margin: 0;
+    }
+    #logo h1{
+        font-size: 20px;
+        margin: 0;
+        
+    }
+
+    #desktop-logo {
+        display: none;
+    }
+
     .nav-links ul {
         flex-direction: column;
         width: 100%;
@@ -180,7 +250,8 @@ span{
     .nav-links {
         position: absolute;
         top: 0px;
-        right: -250px; /* Move it off-screen */
+        right: -250px;
+        /* Move it off-screen */
         width: 250px;
         height: 100vh;
         background-color: #1EB2A6;
@@ -195,16 +266,19 @@ span{
         margin: 0;
         width: 100%;
     }
+
     .nav-links ul li a {
         width: 100%;
         padding: 15px 20px;
         border-bottom: 1px solid #ffffff;
         box-sizing: border-box;
     }
+
     .icon {
         display: block;
         /* Show hamburger icon */
     }
+
     /* .nav-links.responsive ul,
     .nav-links.responsive .fa-magnifying-glass {
         display: none;
@@ -214,15 +288,20 @@ span{
     }
 
     .nav-links.responsive {
-        right: 0; /* Slide in from the right */
+        right: 0;
+        /* Slide in from the right */
     }
 
     .nav-links ul li a.active,
     .nav-links ul li a:hover {
-        border-bottom: 1px solid orangered; /* Ensure hover state also has divider */
+        border-bottom: 1px solid orangered;
+        /* Ensure hover state also has divider */
     }
 }
 
+.icons .fa-xmark {
+    display: none;
+}
 /* Show the menu when the icon is clicked */
 /* .nav-links.responsive ul {
     display: flex;
